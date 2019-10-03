@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="938bb92d-ee3c-436c-93e7-ca9460e32d85" name="Default Changelist" comment="" />
+    <list default="true" id="938bb92d-ee3c-436c-93e7-ca9460e32d85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RunMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vending_machine/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vending_machine/exceptions/ChocolatesAllGone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/exceptions/ChocolatesAllGone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vending_machine/exceptions/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/exceptions/ProductNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vending_machine/products/chocolates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/products/Chocolates.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +24,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ReD8AmoKNXYb6mvF9fLVRS3ib4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
   </component>
   <component name="RecentsManager">
@@ -36,7 +50,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.RunMachine">
+    <configuration name="RunMachine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RunMachine" />
+      <module name="VendingMachine" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VendingMachine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="vending_machine.VendingMachine" />
       <module name="VendingMachine" />
@@ -52,6 +73,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunMachine" />
         <item itemvalue="Application.VendingMachine" />
       </list>
     </recent_temporary>
@@ -68,5 +90,16 @@
       <updated>1570018505854</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

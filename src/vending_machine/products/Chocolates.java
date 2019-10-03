@@ -2,9 +2,9 @@ package vending_machine.products;
 
 //import vending_machine.Products;
 
-public class chocolates extends Products {
+public class Chocolates extends Products {
 
-    public chocolates(String productDescription) {
+    public Chocolates(String productDescription) {
         super(productDescription);
     }
 }
