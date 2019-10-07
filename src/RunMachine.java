@@ -1,5 +1,8 @@
 import vending_machine.VendingMachine;
+import vending_machine.exceptions.ChocolatesAllGone;
 import vending_machine.exceptions.ProductNotFoundException;
+import vending_machine.exceptions.SaltyCracksAllEatenException;
+import vending_machine.exceptions.SoftDrinkOutOfStockException;
 import vending_machine.products.Chocolates;
 import vending_machine.products.Products;
 import vending_machine.products.SaltySnacks;
@@ -16,26 +19,27 @@ public class RunMachine {
         Products softDrinks = new SoftDrinks("Coke");
 
         //Adding products
-        vendingMachine.addStock(chocolates,4);
-        vendingMachine.addStock(saltySnacks, 5);
+        vendingMachine.addStock(chocolates,2);
+        vendingMachine.addStock(saltySnacks, 3);
         vendingMachine.addStock(softDrinks,2);
 
-        //Buying three chocolate
-        vendingMachine.buy(chocolates);
-        vendingMachine.buy(chocolates);
-        vendingMachine.buy(chocolates);
+        try {
+            //Buying three chocolate and catching exceptions
+            vendingMachine.buy(chocolates);
+            vendingMachine.buy(chocolates);
+            //Buying three Salty Snacks. Salty Snacks
+            vendingMachine.buy(saltySnacks);
+            vendingMachine.buy(saltySnacks);
+            vendingMachine.buy(saltySnacks);
 
-        //Buying six Salty Snacks. Salty Snacks exceptions should be thrown.
-        vendingMachine.buy(saltySnacks);
-        vendingMachine.buy(saltySnacks);
-        vendingMachine.buy(saltySnacks);
-        vendingMachine.buy(saltySnacks);
-        vendingMachine.buy(saltySnacks);
-        vendingMachine.buy(saltySnacks);
+             //Buying three soft drinks, but there is only two available exceptions should be handled.
+            vendingMachine.buy(softDrinks);
+            vendingMachine.buy(softDrinks);
+            vendingMachine.buy(softDrinks);
 
-        //Buying 2 soft drinks
-        vendingMachine.buy(softDrinks);
-        vendingMachine.buy(softDrinks);
+        }catch (ChocolatesAllGone | SaltyCracksAllEatenException | SoftDrinkOutOfStockException ex) {
+            System.out.println(ex);
+        }
 
         //Getting stack for all products
         System.out.println("Stock available: " + vendingMachine.getStock());

@@ -6,6 +6,6 @@ public class ChocolatesAllGone extends ProductNotFoundException {
 
     public ChocolatesAllGone(){
         super();
-        System.out.println("Chocolate All gone Exception");
+        System.out.println("Chocolates All Gone");
     }
 }

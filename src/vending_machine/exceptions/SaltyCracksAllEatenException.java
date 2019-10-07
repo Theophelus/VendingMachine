@@ -4,6 +4,6 @@ public class SaltyCracksAllEatenException extends ProductNotFoundException {
 
     public SaltyCracksAllEatenException(){
         super();
-        System.out.println( "Salty Snacks All Eaten Exception..!" );
+        System.out.println( "Salty Snacks All Eaten..!" );
     }
 }
