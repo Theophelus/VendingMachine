@@ -11,7 +11,7 @@ import vending_machine.products.SoftDrinks;
 public class RunMachine {
 
 
-    public static void main(String[] args) throws ProductNotFoundException {
+    public static void main(String[] args){
         VendingMachine vendingMachine  = new VendingMachine();
 
         Products chocolates = new Chocolates("Bar One");
@@ -39,6 +39,8 @@ public class RunMachine {
 
         }catch (ChocolatesAllGone | SaltyCracksAllEatenException | SoftDrinkOutOfStockException ex) {
             System.out.println();
+        } catch (ProductNotFoundException e) {
+            e.printStackTrace();
         }
 
         //Getting stack for all products
