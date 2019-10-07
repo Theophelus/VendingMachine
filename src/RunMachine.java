@@ -38,7 +38,7 @@ public class RunMachine {
             vendingMachine.buy(softDrinks);
 
         }catch (ChocolatesAllGone | SaltyCracksAllEatenException | SoftDrinkOutOfStockException ex) {
-            System.out.println(ex);
+            System.out.println();
         }
 
         //Getting stack for all products
