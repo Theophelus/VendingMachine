@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="938bb92d-ee3c-436c-93e7-ca9460e32d85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/vending_machine/exceptions/InvalidProductException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/RunMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/RunMachine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/VendingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/VendingMachine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/ChocolatesAllGone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/ChocolatesAllGone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/ProductNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/ProductNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/SaltyCracksAllEatenException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/SaltyCracksAllEatenException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/SoftDrinkOutOfStockException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/exceptions/SoftDrinkOutOfStockException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/products/SaltySnacks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VendingMachine/vending_machine/products/SaltySnacks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RunMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RunMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vending_machine/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/VendingMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vending_machine/exceptions/ChocolatesAllGone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/exceptions/ChocolatesAllGone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vending_machine/exceptions/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/exceptions/ProductNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vending_machine/exceptions/SaltyCracksAllEatenException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/exceptions/SaltyCracksAllEatenException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/vending_machine/exceptions/SoftDrinkOutOfStockException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/exceptions/SoftDrinkOutOfStockException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vending_machine/products/SaltySnacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/vending_machine/products/SaltySnacks.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

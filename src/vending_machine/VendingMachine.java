@@ -1,9 +1,6 @@
 package vending_machine;
 
-import vending_machine.exceptions.ChocolatesAllGone;
-import vending_machine.exceptions.ProductNotFoundException;
-import vending_machine.exceptions.SaltyCracksAllEatenException;
-import vending_machine.exceptions.SoftDrinkOutOfStockException;
+import vending_machine.exceptions.*;
 import vending_machine.products.Chocolates;
 import vending_machine.products.Products;
 import vending_machine.products.SaltySnacks;
@@ -14,54 +11,63 @@ public class VendingMachine
 
 {
 
-    private int chocolateStock = 0;
-    private int saltySanacks = 0;
-    private int softDrink = 0;
+    private int chocolateStock;
+    private int saltySanacks;
+    private int softDrink;
 
-    public  void buy(Products products) throws ProductNotFoundException {
+    public  void buy(Products products) throws ProductNotFoundException{
 
-        if (products != null) {
+
+        if (products instanceof Products) {
+
             if (products instanceof Chocolates) {
                 if (this.chocolateStock <= 0) {
                     throw new ChocolatesAllGone();
                 } else {
-                    this.chocolateStock--;
+                    this.chocolateStock --;
                 }
-            }
-            if (this.saltySanacks <= 0) {
-                if (products instanceof SaltySnacks) {
-                    throw new SaltyCracksAllEatenException();
-                }
-            } else {
-                this.saltySanacks--;
             }
 
-            if (this.saltySanacks <= 0) {
-                if (products instanceof SaltySnacks) {
+            else if (products instanceof SaltySnacks) {
+                if (this.saltySanacks <= 0) {
                     throw new SaltyCracksAllEatenException();
+                } else {
+                    this.saltySanacks--;
                 }
-            } else {
-                this.softDrink--;
             }
-        }else
-            throw new ProductNotFoundException();
+
+            else  if (products instanceof SoftDrinks) {
+                if (this.softDrink <= 0) {
+                    throw new SoftDrinkOutOfStockException();
+                } else {
+                    this.softDrink --;
+                }
+            }
+
+            else {
+                throw new ProductNotFoundException();
+            }
+
+        }else {
+            throw new InvalidProductException();
+        }
     }
 
     public void addStock(Products products, int newStock) {
 
-           if (products instanceof Chocolates)
+           if (products instanceof Chocolates){
            this.chocolateStock += newStock;
-
-           if (products instanceof SaltySnacks)
-               this.saltySanacks += newStock;
-
-           if (products instanceof SoftDrinks)
-               this.softDrink +=newStock;
-
+           }
+        if (products instanceof SaltySnacks){
+            this.saltySanacks += newStock;
+        }
+        if (products instanceof SoftDrinks){
+            this.softDrink += newStock;
+        }
     }
 
     public int getStock() {
-        return chocolateStock + saltySanacks + softDrink;
+        return this.chocolateStock + this.saltySanacks + this.softDrink;
     }
 
 
